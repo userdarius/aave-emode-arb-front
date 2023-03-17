@@ -3,7 +3,7 @@ import { Craft } from "./Craft";
 import { Unwind } from "./Unwind";
 import { FieldSet, Input, Box, Card, Text, Skeleton } from "degen";
 import { useContractRead } from "wagmi";
-import { Charts } from "./Charts.tsx";
+import TradingViewWidget from "./Charts.jsx";
 
 export function Stats() {
   return (
@@ -13,7 +13,13 @@ export function Stats() {
       alignItems="center"
       gap="5"
       justifyContent="center"
+      display="flex"
     >
+      <Card padding="4" shadow>
+        <Box>
+          <TradingViewWidget />
+        </Box>
+      </Card>
       <Card padding="4" shadow>
         <Box padding="2">
           <Text align="left">Collateral in : </Text>
