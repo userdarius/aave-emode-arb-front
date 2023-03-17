@@ -13,13 +13,14 @@ export function Stats() {
       alignItems="center"
       gap="5"
       justifyContent="center"
-      display="flex"
     >
-      <Card padding="4" shadow>
-        <Box>
+      <Card padding="4" shadow width="1/2">
+        <Box justifyContent="stretch">
+          {" "}
           <TradingViewWidget />
         </Box>
       </Card>
+
       <Card padding="4" shadow>
         <Box padding="2">
           <Text align="left">Collateral in : </Text>
