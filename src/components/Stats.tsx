@@ -3,7 +3,7 @@ import { Craft } from "./Craft";
 import { Unwind } from "./Unwind";
 import { FieldSet, Input, Box, Card, Text, Skeleton } from "degen";
 import { useContractRead } from "wagmi";
-import { Charts } from "./Charts";
+import { Charts } from "./Charts.tsx";
 
 export function Stats() {
   return (
